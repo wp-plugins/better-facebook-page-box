@@ -12,7 +12,7 @@ Add the NEW Facebook Page Plugin to your preferred location. Easy, beautiful and
 
 
 == Description ==
-Forget the Likebox, it´s history! Display the NEW Facebook Page Plugin on your website. So beautiful, so easy to include with this Plugin! 
+Forget the Likebox, it´s history! Display the NEW Facebook Page Plugin on your website. So beautiful, so easy to include with this Plugin!
 
 **Features**
 
@@ -60,10 +60,10 @@ Fore other questions you always can write me an email to: mail@danielederosa.de 
 
 == Changelog ==
 = 1.1 =
-Fixed bug for multisite compability
+* Fixed bug for multisite compability
 = 1.0 =
 * Initial release.
 
 == Upgrade Notice ==
- 
+
 There is no need to upgrade just yet.
