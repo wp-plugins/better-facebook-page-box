@@ -23,7 +23,9 @@ if ( !isset( $dd_options ) && file_exists( dirname( __FILE__ ) . '/admin/options
   require_once( dirname( __FILE__ ) . '/admin/options.php' );
 }
 
-TGM_Plugin_Activation::get_instance()->update_dismiss();
+if ( !is_multisite() ) {
+  TGM_Plugin_Activation::get_instance()->update_dismiss();
+}
 
 /**
  * Remove Redux Demo Notices
