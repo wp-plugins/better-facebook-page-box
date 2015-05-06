@@ -4,7 +4,7 @@ Tags: facebook page plugin, facebook, page, plugin, simple, new
 Donate link: http://www.danielederosa.de
 Requires at least: 3.5
 Tested up to: 4.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,8 @@ Fore other questions you always can write me an email to: mail@danielederosa.de 
 3. The backend is important too! ;-)
 
 == Changelog ==
+= 1.1 =
+Fixed bug for multisite compability
 = 1.0 =
 * Initial release.
 
