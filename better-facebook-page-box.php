@@ -4,7 +4,7 @@
  * Plugin Name: Better Facebook Page Box
  * Plugin URI: www.danielederosa.de
  * Description: Add the NEW Facebook Page Plugin to your preferred location. Easy, beautiful and with many options!
- * Version: 1.1
+ * Version: 1.2
  * Author: Daniele De Rosa
  * Author URI: www.danielederosa.de
  **/
