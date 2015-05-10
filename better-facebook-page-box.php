@@ -49,7 +49,7 @@ function dd_remove_redux_demo() {
 }
 
 /**
- * Load Redux Framework from WP Plugin Repository
+ * Loading Redux Framework from WP Plugin Repository
  */
 
 add_action( 'tgmpa_register', 'dd_my_theme_register_required_plugins' );
