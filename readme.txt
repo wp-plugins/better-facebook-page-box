@@ -4,7 +4,7 @@ Tags: facebook page plugin, facebook, page, plugin, simple, new
 Donate link: http://www.danielederosa.de
 Requires at least: 3.5
 Tested up to: 4.2.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,7 @@ Forget the Likebox, it´s history! Display the NEW Facebook Page Plugin on your 
 * Display your Facebook Page Plugin easly under each of your posts.
 * Many options to display your Facebook Page.
 * It´s SEO-optimated!
+* Choose your language
 
 **Benefits**
 
@@ -59,6 +60,8 @@ Fore other questions you always can write me an email to: mail@danielederosa.de 
 3. The backend is important too! ;-)
 
 == Changelog ==
+= 1.2 =
+* Included language support
 = 1.1 =
 * Fixed bug for multisite compability
 = 1.0 =

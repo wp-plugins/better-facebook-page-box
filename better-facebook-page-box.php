@@ -111,13 +111,13 @@ function dd_my_theme_register_required_plugins() {
 			'installing'                      => __( 'Installing Plugin: %s', 'theme-slug' ), // %s = plugin name.
 			'oops'                            => __( 'Something went wrong with the plugin API.', 'theme-slug' ),
 			'notice_can_install_required'     => _n_noop(
-				'This theme requires the following plugin: %1$s.',
-				'This theme requires the following plugins: %1$s.',
+				'Better Facebook Page Box requires the following plugin: %1$s.',
+				'Better Facebook Page Box requires the following plugins: %1$s.',
 				'theme-slug'
 			), // %1$s = plugin name(s).
 			'notice_can_install_recommended'  => _n_noop(
-				'This theme recommends the following plugin: %1$s.',
-				'This theme recommends the following plugins: %1$s.',
+				'Better Facebook Page Box recommends the following plugin: %1$s.',
+				'Better Facebook Page Box recommends the following plugins: %1$s.',
 				'theme-slug'
 			), // %1$s = plugin name(s).
 			'notice_cannot_install'           => _n_noop(
@@ -203,7 +203,31 @@ function dd_load_scripts() {
  */
 
 add_action('wp_footer', 'dd_put_facebook_sdk');
-function dd_put_facebook_sdk() { ?>
+function dd_put_facebook_sdk() {
+  global $dd_options;
+
+  $dd_bfp_language = '';
+  if ( $dd_options['option-language'] == 1 ) {
+    $dd_bfp_language = 'en_US';
+  } else if ( $dd_options['option-language'] == 2 ) {
+    $dd_bfp_language = 'de_DE';
+  } else if ( $dd_options['option-language'] == 3 ) {
+    $dd_bfp_language = 'fr_FR';
+  } else if ( $dd_options['option-language'] == 4 ) {
+    $dd_bfp_language = 'es_LA';
+  } else if ( $dd_options['option-language'] == 5 ) {
+    $dd_bfp_language = 'pt_PT';
+  } else if ( $dd_options['option-language'] == 6 ) {
+    $dd_bfp_language = 'ru_RU';
+  } else if ( $dd_options['option-language'] == 7 ) {
+    $dd_bfp_language = 'cs_CZ';
+  } else if ( $dd_options['option-language'] == 8 ) {
+    $dd_bfp_language = 'ja_JP';
+  } else if ( $dd_options['option-language'] == 9 ) {
+    $dd_bfp_language = 'it_IT';
+  }
+
+  ?>
 
   <script>
     window.onload = function() {
@@ -218,7 +242,7 @@ function dd_put_facebook_sdk() { ?>
         'if (d.getElementById(id)) return;' +
         'js = d.createElement(s); js.id = id;' +
         'js.src = ' +
-        '"//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.3&appId=430209653814231";' +
+        '"//connect.facebook.net/<?php echo $dd_bfp_language ?>/sdk.js#xfbml=1&version=v2.3&appId=430209653814231";' +
         'fjs.parentNode.insertBefore(js, fjs);' +
         '}(document, "script", "facebook-jssdk"));'
       }))

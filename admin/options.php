@@ -220,6 +220,24 @@
                 'subtitle' => __( 'Please put your URL here', 'dd_bfp_plugin' ),
                 'placeholder'  => 'Your URL here'
             ),
+            array(
+                'id'       => 'option-language',
+                'type'     => 'select',
+                'title'    => __( 'Language', 'dd_bfp_plugin' ),
+                'subtitle' => __( 'Please choose your language', 'dd_bfp_plugin' ),
+                'options'  => array(
+                    '1' => 'English',
+                    '2' => 'German',
+                    '3' => 'French',
+                    '4' => 'Spanish',
+                    '5' => 'Portuguese',
+                    '6' => 'Russian',
+                    '7' => 'Czech',
+                    '8' => 'Japanese',
+                    '9' => 'Italian'
+                ),
+                'default'  => '1'
+            ),
         )
     ) );
 
